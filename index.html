@@ -16,79 +16,83 @@
 
         <h1>Clube do torcedor</h1>
         <p>Preencha todos os campos abaixo para se cadastrar</p>
-
-        <form id="Cadastro" action="#" method="post">
-            <label for="nome">Nome completo</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
-            <label for="email">E-mail:</label><input type="email" name="email" id="email"
-                placeholder="Digite seu e-mail" required>
-            <label for="cpf">CPF:</label><input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
-            <label for="dataNasc">Data de nascimento</label>
-            <input type="date" id="dataNasc" required>
-            <label for="celular">Celular:</label><input type="tel" name="celular" id="celular"
-                placeholder="(99) 99999-9999" required>
-
-
-            <label>Gênero</label>
-            <select id="genero" name="genero" required>
-                <option value="" disabled selected>Selecione seu gênero</option>
-                <option value="feminino">Feminino</option>
-                <option value="masculino">Masculino</option>
-                <option value="outro">Outro</option>
-                <option value="naoDeclarar">Prefiro não declarar</option>
-            </select>
-
-            <label>Com qual frequência vai aos jogos?</label>
-            <div class="radio-group">
-                <label><input type="radio" name="camisa" value="raramente"> Raramente</label>
-                <label><input type="radio" name="camisa" value="pouco">Pouco</label>
-                <label><input type="radio" name="camisa" value="muito">Muito</label>
-                <label><input type="radio" name="camisa" value="frequentemente">frequentemente</label>
-            </div>
-
-
-            <label>Camisa</label>
-            <div class="radio-group">
-                <label><input type="radio" name="camisa" value="P"> P</label>
-                <label><input type="radio" name="camisa" value="M"> M</label>
-                <label><input type="radio" name="camisa" value="G"> G</label>
-                <label><input type="radio" name="camisa" value="GG"> GG</label>
-                <label><input type="radio" name="camisa" value="XG"> XG</label>
-            </div>
-
-
-            <label class="checkbox">
-                <input type="checkbox" required>
-                Sou sócio torcedor
-            </label>
-
-            <label class="checkbox">
-                <input type="checkbox" required>
-                Possuo camisa oficial
-            </label>
-
+        <form action="pages/projetotrio.php" method="post" class="formulario">
 
             <form id="Cadastro" action="#" method="post">
-                <label for="nome">Numero da carteirinha</label>
-                <input type="text" name="nome" id="nome" placeholder="carteirinha">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                <label for="email">E-mail:</label><input type="email" name="email" id="email"
+                    placeholder="Digite seu e-mail" required>
+                <label for="cpf">CPF:</label><input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF"
+                    required>
+                <label for="dataNasc">Data de nascimento</label>
+                <input type="date" id="dataNasc" required>
+                <label for="celular">Celular:</label><input type="tel" name="celular" id="celular"
+                    placeholder="(99) 99999-9999" required>
 
+
+                <label>Gênero</label>
+                <select id="genero" name="genero" required>
+                    <option value="" disabled selected>Selecione seu gênero</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    <option value="naoDeclarar">Prefiro não declarar</option>
+                </select>
+
+                <label>Com qual frequência vai aos jogos?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="frequencia" value="raramente"> Raramente</label>
+                    <label><input type="radio" name="frequencia" value="pouco">Pouco</label>
+                    <label><input type="radio" name="frequencia" value="muito">Muito</label>
+                    <label><input type="radio" name="frequencia" value="frequentemente">frequentemente</label>
+                </div>
+
+
+                <label>Camisa</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="camisa" value="P"> P</label>
+                    <label><input type="radio" name="camisa" value="M"> M</label>
+                    <label><input type="radio" name="camisa" value="G"> G</label>
+                    <label><input type="radio" name="camisa" value="GG"> GG</label>
+                    <label><input type="radio" name="camisa" value="XG"> XG</label>
+                </div>
+
+
+                <label class="checkbox">
+                    <input type="checkbox" name="socio">
+                    Sou sócio torcedor
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Possuo camisa oficial
+                </label>
 
 
                 <form id="Cadastro" action="#" method="post">
-                    <label for="nome">Qual é o seu time do coração?</label>
-                    <input type="text" name="nome" id="nome" placeholder="time do coração">
+                    <label for="nome">Numero da carteirinha</label>
+                    <input type="text" name="nome" id="nome" placeholder="carteirinha">
 
 
-                    <label for="mensagem">Nome e número da camisa</label>
-                    <textarea id="mensagem" name="mensagem" rows="2" placeholder="Nome e número da camisa"></textarea>
 
-                    <label class="checkbox">
-                        <input type="checkbox" required>
-                        Li e aceito os termos e condições
-                    </label>
-                    <button type="submit">Cadastrar</button>
+                    <form id="Cadastro" action="#" method="post">
+                        <label for="nome">Qual é o seu time do coração?</label>
+                        <input type="text" name="time" id="nome" placeholder="time do coração">
 
-                </form>
+
+                        <label for="mensagem">Nome e número da camisa</label>
+                        <textarea id="mensagem" name="mensagem" rows="2"
+                            placeholder="Nome e número da camisa"></textarea>
+
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            Li e aceito os termos e condições
+                        </label>
+                        <button type="submit">Cadastrar</button>
+
+                    </form>
+
     </div>
 
 </body>
